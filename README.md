@@ -333,17 +333,3 @@ chmod +x execute_command
 | `encode <command>`  | Encode command to base64                 | `go run main.go encode "whoami"`                  |
 | `decode <base64>`   | Decode base64 to command                 | `go run main.go decode "d2hvYW1p"`                |
 | `info`              | Show system information                  | `go run main.go info`                             |
-
-## Architecture Benefits
-
-- **Extensible**: Easy to add new executor types (encrypted, custom, etc.)
-- **Separation of Concerns**: Business logic separated from CLI interface
-- **Testable**: Easy to unit test each module independently
-- **Maintainable**: Well-organized code structure with clear module boundaries
-- **Reusable**: Interface can be used in other projects
-- **Comprehensive Logging**: Multi-level logging system with module names for better debugging
-- **Smart Validation**: Enforced compatibility between executor and shell types
-- **Default Commands**: Built-in defaults for quick testing and demonstration
-- **Cross-Platform**: Works seamlessly on Windows and Linux with appropriate shell selection
-- **Flexible Configuration**: Command line flags for all major settings
-- **Error Handling**: Detailed error logging and user-friendly error messages
