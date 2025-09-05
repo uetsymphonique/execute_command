@@ -1,3 +1,3 @@
 module execute_command
 
-go 1.21
+go 1.18
